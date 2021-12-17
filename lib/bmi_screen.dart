@@ -83,18 +83,18 @@ class _BmiScreenState extends State<BmiScreen> {
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal:   20.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
-                  color: Colors.grey[400]
-                ),
+                    borderRadius: BorderRadius.circular(10.0),
+                    color: Colors.grey[400]),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'HEIGHT',
-                      style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -103,16 +103,16 @@ class _BmiScreenState extends State<BmiScreen> {
                       children: [
                         Text(
                           '180',
-                          style:
-                              TextStyle(fontSize: 45, fontWeight: FontWeight.w900),
+                          style: TextStyle(
+                              fontSize: 45, fontWeight: FontWeight.w900),
                         ),
                         SizedBox(
                           width: 10,
                         ),
                         Text(
                           'cm',
-                          style:
-                              TextStyle(fontSize: 25, fontWeight: FontWeight.w900),
+                          style: TextStyle(
+                              fontSize: 25, fontWeight: FontWeight.w900),
                         ),
                       ],
                     ),
@@ -131,26 +131,36 @@ class _BmiScreenState extends State<BmiScreen> {
           ),
           Expanded(
             child: Row(
-             children: [
-               Column(
-                 children: [
-                   Text(
-                     'AGE',
-                     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                   ),
-                   Text(
-                     'HEIGHT',
-                     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                   ),
-                   Row(
-                     children: [
-                       FloatingActionButton(onPressed: () {  },)
-                     ],
-                   ),
-                 ],
-               ),
-
-             ],
+              children: [
+                Column(
+                  children: [
+                    Text(
+                      'AGE',
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      'HEIGHT',
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    ),
+                    Row(
+                      children: [
+                        FloatingActionButton(
+                          onPressed: () {},
+                          child: Icon(Icons.remove),
+                          mini: true,
+                        ),
+                        FloatingActionButton(
+                          onPressed: () {},
+                          child: Icon(Icons.add),
+                          mini: true,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
             ),
           ),
           MaterialButton(
