@@ -90,7 +90,8 @@ class _BmiScreenState extends State<BmiScreen> {
                       fontSize: 25, fontWeight: FontWeight.bold),
                 ),
                 Row(
-                  crossAxisAlignment: CrossAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.baseline,
+                  textBaseline: TextBaseline.alphabetic,
                   children: [
                     Text(
                       '180',
