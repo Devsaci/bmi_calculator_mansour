@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
@@ -17,10 +18,31 @@ class _BmiScreenState extends State<BmiScreen> {
       appBar: AppBar(title: Text("BMI Calculator")),
       body: Column(
         children: [
-          Container(width: double.infinity, child: Text('BMI Calculator'),color: Colors.black,),
-          Container(width: double.infinity, child: Text('BMI Calculator'),color: Colors.redAccent,),
-          Container(width: double.infinity, child: Text('BMI Calculator'),color: Colors.yellowAccent,),
-          MaterialButton(onPressed: (){},child: Text('CALCULATE'),)
+          Expanded(
+              child: Container(
+            width: double.infinity,
+            child: Text('BMI Calculator'),
+            color: Colors.black,
+          )),
+          Expanded(
+            child: Container(
+              width: double.infinity,
+              child: Text('BMI Calculator'),
+              color: Colors.redAccent,
+            ),
+          ),
+          Expanded(
+            child: Container(
+              width: double.infinity,
+              child: Text('BMI Calculator'),
+              color: Colors.yellowAccent,
+            ),
+          ),
+          MaterialButton(
+            onPressed: () {},
+            child: Text('CALCULATE',style: TextStyle(color: Colors.white),),
+            color: Colors.black87,
+          )
         ],
       ),
     );
