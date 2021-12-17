@@ -138,6 +138,7 @@ class _BmiScreenState extends State<BmiScreen> {
                     color: Colors.grey,
                   ),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         'AGE',
