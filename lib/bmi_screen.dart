@@ -90,6 +90,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       fontSize: 25, fontWeight: FontWeight.bold),
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.baseline,
                   textBaseline: TextBaseline.alphabetic,
                   children: [
@@ -101,7 +102,7 @@ class _BmiScreenState extends State<BmiScreen> {
                     Text(
                       'cm',
                       style: TextStyle(
-                          fontSize: 15, fontWeight: FontWeight.w900),
+                          fontSize: 25, fontWeight: FontWeight.w900),
                     ),
                   ],
                 ),
