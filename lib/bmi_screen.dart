@@ -50,6 +50,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       ),
                     ),
                   ),
+                 SizedBox(width: 20,),
                   Expanded(
                     child: Container(
                       child: Column(
