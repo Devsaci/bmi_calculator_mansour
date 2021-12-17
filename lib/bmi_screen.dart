@@ -82,10 +82,13 @@ class _BmiScreenState extends State<BmiScreen> {
           ),
           Expanded(
             child: Column(
-            children: [
-
-            ],
-
+              children: [
+                Text(
+                  'HEIGHT',
+                  style: TextStyle(
+                      fontSize: 25, fontWeight: FontWeight.bold),
+                )
+              ],
             ),
           ),
           Expanded(
