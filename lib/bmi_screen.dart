@@ -99,6 +99,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       style: TextStyle(
                           fontSize: 45, fontWeight: FontWeight.w900),
                     ),
+                    SizedBox(width: 10,),
                     Text(
                       'cm',
                       style: TextStyle(
