@@ -41,6 +41,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       )
                     ],
                   ),
+                  decoration: BoxDecoration(),
                 ),
               ],
             ),
