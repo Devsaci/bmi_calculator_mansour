@@ -23,14 +23,24 @@ class _BmiScreenState extends State<BmiScreen> {
           Expanded(
             child: Row(
               children: [
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.ac_unit,size: 70.0,),
-                    SizedBox(height: 15,),
-                    Text('MALE',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)
-
-                  ],
+                Container(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.ac_unit,
+                        size: 70.0,
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        'MALE',
+                        style: TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.bold),
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
