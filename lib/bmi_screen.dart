@@ -132,33 +132,39 @@ class _BmiScreenState extends State<BmiScreen> {
           Expanded(
             child: Row(
               children: [
-                Column(
-                  children: [
-                    Text(
-                      'AGE',
-                      style:
-                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      'HEIGHT',
-                      style:
-                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                    ),
-                    Row(
-                      children: [
-                        FloatingActionButton(
-                          onPressed: () {},
-                          child: Icon(Icons.remove),
-                          mini: true,
-                        ),
-                        FloatingActionButton(
-                          onPressed: () {},
-                          child: Icon(Icons.add),
-                          mini: true,
-                        ),
-                      ],
-                    ),
-                  ],
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10.0),
+                    color: Colors.grey,
+                  ),
+                  child: Column(
+                    children: [
+                      Text(
+                        'AGE',
+                        style:
+                            TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        'HEIGHT',
+                        style:
+                            TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                      ),
+                      Row(
+                        children: [
+                          FloatingActionButton(
+                            onPressed: () {},
+                            child: Icon(Icons.remove),
+                            mini: true,
+                          ),
+                          FloatingActionButton(
+                            onPressed: () {},
+                            child: Icon(Icons.add),
+                            mini: true,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
