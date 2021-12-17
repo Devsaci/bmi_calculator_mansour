@@ -132,6 +132,23 @@ class _BmiScreenState extends State<BmiScreen> {
           Expanded(
             child: Row(
              children: [
+               Column(
+                 children: [
+                   Text(
+                     'AGE',
+                     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                   ),
+                   Text(
+                     'HEIGHT',
+                     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                   ),
+                   Row(
+                     children: [
+                       FloatingActionButton(onPressed: () {  },)
+                     ],
+                   ),
+                 ],
+               ),
 
              ],
             ),
