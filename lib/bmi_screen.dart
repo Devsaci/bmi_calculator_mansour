@@ -88,6 +88,7 @@ class _BmiScreenState extends State<BmiScreen> {
                 color: Colors.grey[400]
               ),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     'HEIGHT',
