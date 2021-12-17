@@ -50,7 +50,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       ),
                     ),
                   ),
-                 SizedBox(width: 20,),
+                  SizedBox(width: 20),
                   Expanded(
                     child: Container(
                       child: Column(
@@ -81,10 +81,11 @@ class _BmiScreenState extends State<BmiScreen> {
             ),
           ),
           Expanded(
-            child: Container(
-              width: double.infinity,
-              child: Text('BMI Calculator'),
-              color: Colors.redAccent,
+            child: Column(
+            children: [
+
+            ],
+
             ),
           ),
           Expanded(
