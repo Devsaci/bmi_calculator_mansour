@@ -154,6 +154,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               FloatingActionButton(
                                 onPressed: () {},
@@ -192,6 +193,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               FloatingActionButton(
                                 onPressed: () {},
