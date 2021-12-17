@@ -2,6 +2,7 @@
 
 import 'dart:ui';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BmiScreen extends StatefulWidget {
@@ -24,6 +25,7 @@ class _BmiScreenState extends State<BmiScreen> {
                 Column(
                   children: [
                     Icon(Icons.ac_unit,size: 70.0,),
+                    Text('MALE',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)
 
                   ],
                 ),
