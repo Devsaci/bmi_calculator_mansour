@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'dart:ui';
 
@@ -19,11 +19,12 @@ class _BmiScreenState extends State<BmiScreen> {
       body: Column(
         children: [
           Expanded(
-              child: Container(
-            width: double.infinity,
-            child: Text('BMI Calculator'),
-            color: Colors.black,
-          )),
+            child: Row(
+           children: [
+
+           ],
+            ),
+          ),
           Expanded(
             child: Container(
               width: double.infinity,
@@ -39,9 +40,13 @@ class _BmiScreenState extends State<BmiScreen> {
             ),
           ),
           MaterialButton(
+            height: 50,
             onPressed: () {},
-            child: Text('CALCULATE',style: TextStyle(color: Colors.white),),
-            color: Colors.black87,
+            child: Text(
+              'CALCULATE',
+              style: TextStyle(color: Colors.white),
+            ),
+            color: Colors.blueAccent,
           )
         ],
       ),
