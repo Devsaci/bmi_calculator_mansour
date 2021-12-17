@@ -87,7 +87,16 @@ class _BmiScreenState extends State<BmiScreen> {
                   'HEIGHT',
                   style: TextStyle(
                       fontSize: 25, fontWeight: FontWeight.bold),
-                )
+                ),
+                Row(
+                  children: [
+                    Text(
+                      '180',
+                      style: TextStyle(
+                          fontSize: 45, fontWeight: FontWeight.w900),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
