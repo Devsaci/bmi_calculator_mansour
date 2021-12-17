@@ -20,9 +20,14 @@ class _BmiScreenState extends State<BmiScreen> {
         children: [
           Expanded(
             child: Row(
-           children: [
+              children: [
+                Column(
+                  children: [
+                    Icon(Icons.ac_unit,size: 70.0,),
 
-           ],
+                  ],
+                ),
+              ],
             ),
           ),
           Expanded(
