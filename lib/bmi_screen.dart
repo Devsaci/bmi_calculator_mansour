@@ -83,6 +83,10 @@ class _BmiScreenState extends State<BmiScreen> {
           ),
           Expanded(
             child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                color: Colors.grey[400]
+              ),
               child: Column(
                 children: [
                   Text(
