@@ -82,41 +82,43 @@ class _BmiScreenState extends State<BmiScreen> {
             ),
           ),
           Expanded(
-            child: Column(
-              children: [
-                Text(
-                  'HEIGHT',
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.baseline,
-                  textBaseline: TextBaseline.alphabetic,
-                  children: [
-                    Text(
-                      '180',
-                      style:
-                          TextStyle(fontSize: 45, fontWeight: FontWeight.w900),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'cm',
-                      style:
-                          TextStyle(fontSize: 25, fontWeight: FontWeight.w900),
-                    ),
-                  ],
-                ),
-                Slider(
-                  value: 50,
-                  max: 100,
-                  min: 10,
-                  onChanged: (value) {
-                    print(value);
-                  },
-                )
-              ],
+            child: Container(
+              child: Column(
+                children: [
+                  Text(
+                    'HEIGHT',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    textBaseline: TextBaseline.alphabetic,
+                    children: [
+                      Text(
+                        '180',
+                        style:
+                            TextStyle(fontSize: 45, fontWeight: FontWeight.w900),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        'cm',
+                        style:
+                            TextStyle(fontSize: 25, fontWeight: FontWeight.w900),
+                      ),
+                    ],
+                  ),
+                  Slider(
+                    value: 50,
+                    max: 100,
+                    min: 10,
+                    onChanged: (value) {
+                      print(value.round());
+                    },
+                  )
+                ],
+              ),
             ),
           ),
           Expanded(
