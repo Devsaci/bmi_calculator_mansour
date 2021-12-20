@@ -57,7 +57,7 @@ class _BmiScreenState extends State<BmiScreen> {
                         ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0),
-                          color: Colors.grey,
+                          color: isMale? Colors.amber: Colors.grey,
                         ),
                       ),
                     ),
@@ -77,7 +77,7 @@ class _BmiScreenState extends State<BmiScreen> {
                             height: 15,
                           ),
                           Text(
-                            'MALE',
+                            'FEMALE',
                             style: TextStyle(
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           )
