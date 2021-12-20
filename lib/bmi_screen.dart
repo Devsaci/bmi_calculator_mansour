@@ -32,8 +32,8 @@ class _BmiScreenState extends State<BmiScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image(image: AssetImage('images/male.png'),
-                          height: 90.0,
-                              width: 90.0,),
+                          height: 80.0,
+                              width: 80.0,),
                           SizedBox(
                             height: 15,
                           ),
@@ -56,10 +56,9 @@ class _BmiScreenState extends State<BmiScreen> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
-                            Icons.ac_unit,
-                            size: 70.0,
-                          ),
+                          Image(image: AssetImage('images/female.png'),
+                            height: 80.0,
+                            width: 80.0,),
                           SizedBox(
                             height: 15,
                           ),
