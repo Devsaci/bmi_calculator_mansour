@@ -16,7 +16,8 @@ class BmiScreen extends StatefulWidget {
 
 class _BmiScreenState extends State<BmiScreen> {
   bool isMale = true;
-   // Color _color = Colors.grey;
+
+  // Color _color = Colors.grey;
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +35,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       onTap: () {
                         setState(() {
                           // color: Colors.amber;
+                          isMale = true;
                         });
                       },
                       child: Container(
@@ -57,35 +59,42 @@ class _BmiScreenState extends State<BmiScreen> {
                         ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0),
-                          color: isMale? Colors.amber: Colors.grey,
+                          color: isMale ? Colors.amber : Colors.grey,
                         ),
                       ),
                     ),
                   ),
                   SizedBox(width: 20),
                   Expanded(
-                    child: Container(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image(
-                            image: AssetImage('assets/images/female.png'),
-                            height: 80.0,
-                            width: 80.0,
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Text(
-                            'FEMALE',
-                            style: TextStyle(
-                                fontSize: 25, fontWeight: FontWeight.bold),
-                          )
-                        ],
-                      ),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey,
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          isMale = false;
+                        });
+                      },
+                      child: Container(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image(
+                              image: AssetImage('assets/images/female.png'),
+                              height: 80.0,
+                              width: 80.0,
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Text(
+                              'FEMALE',
+                              style: TextStyle(
+                                  fontSize: 25, fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: isMale ? Colors.grey : Colors.amber,
+                        ),
                       ),
                     ),
                   ),
