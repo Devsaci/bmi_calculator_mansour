@@ -33,7 +33,7 @@ class _BmiScreenState extends State<BmiScreen> {
                     child: GestureDetector(
                       onTap: () {
                         setState(() {
-                          _color = Colors.amber;
+                          // color: Colors.amber;
                         });
                       },
                       child: Container(
