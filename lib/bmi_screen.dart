@@ -16,6 +16,7 @@ class BmiScreen extends StatefulWidget {
 
 class _BmiScreenState extends State<BmiScreen> {
   bool isMale = true;
+   Color _color = Colors.grey;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +31,11 @@ class _BmiScreenState extends State<BmiScreen> {
                 children: [
                   Expanded(
                     child: GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        setState(() {
+                          _color = Colors.amber;
+                        });
+                      },
                       child: Container(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -52,7 +57,7 @@ class _BmiScreenState extends State<BmiScreen> {
                         ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0),
-                          color: Colors.grey,
+                          color: _color,
                         ),
                       ),
                     ),
