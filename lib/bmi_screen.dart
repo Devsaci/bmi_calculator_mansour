@@ -31,10 +31,9 @@ class _BmiScreenState extends State<BmiScreen> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
-                            Icons.ac_unit,
-                            size: 70.0,
-                          ),
+                          Image(image: AssetImage('images/male.png'),
+                          height: 90.0,
+                              width: 90.0,),
                           SizedBox(
                             height: 15,
                           ),
