@@ -15,6 +15,8 @@ class BmiScreen extends StatefulWidget {
 }
 
 class _BmiScreenState extends State<BmiScreen> {
+  bool isMale = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,26 +29,31 @@ class _BmiScreenState extends State<BmiScreen> {
               child: Row(
                 children: [
                   Expanded(
-                    child: Container(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image(image: AssetImage('images/male.png'),
-                          height: 80.0,
-                              width: 80.0,),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Text(
-                            'MALE',
-                            style: TextStyle(
-                                fontSize: 25, fontWeight: FontWeight.bold),
-                          )
-                        ],
-                      ),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey,
+                    child: GestureDetector(
+                      onTap: () {},
+                      child: Container(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image(
+                              image: AssetImage('assets/images/male.png'),
+                              height: 80.0,
+                              width: 80.0,
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Text(
+                              'MALE',
+                              style: TextStyle(
+                                  fontSize: 25, fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
                   ),
@@ -56,9 +63,11 @@ class _BmiScreenState extends State<BmiScreen> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image(image: AssetImage('images/female.png'),
+                          Image(
+                            image: AssetImage('assets/images/female.png'),
                             height: 80.0,
-                            width: 80.0,),
+                            width: 80.0,
+                          ),
                           SizedBox(
                             height: 15,
                           ),
@@ -170,7 +179,9 @@ class _BmiScreenState extends State<BmiScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(width: 20,),
+                  SizedBox(
+                    width: 20,
+                  ),
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
@@ -218,7 +229,6 @@ class _BmiScreenState extends State<BmiScreen> {
             color: Colors.blueAccent,
             child: MaterialButton(
               height: 50,
-
               onPressed: () {},
               child: Text(
                 'CALCULATE',
