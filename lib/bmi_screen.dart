@@ -16,6 +16,7 @@ class BmiScreen extends StatefulWidget {
 
 class _BmiScreenState extends State<BmiScreen> {
   bool isMale = true;
+  int height = 170;
 
   // Color _color = Colors.grey;
 
@@ -123,7 +124,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       textBaseline: TextBaseline.alphabetic,
                       children: [
                         Text(
-                          '180',
+                          '${height}',
                           style: TextStyle(
                               fontSize: 45, fontWeight: FontWeight.w900),
                         ),
