@@ -21,6 +21,7 @@ class BmiResultScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: const Icon(Icons.keyboard_arrow_left),
         title: const Text('BMI Result Screen'),
         centerTitle: true,
       ),
