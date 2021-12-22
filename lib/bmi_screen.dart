@@ -16,7 +16,7 @@ class BmiScreen extends StatefulWidget {
 
 class _BmiScreenState extends State<BmiScreen> {
   bool isMale = true;
-  int height = 170;
+  double height = 170;
 
   // Color _color = Colors.grey;
 
@@ -124,7 +124,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       textBaseline: TextBaseline.alphabetic,
                       children: [
                         Text(
-                          '${height}',
+                          '${height.round()}',
                           style: TextStyle(
                               fontSize: 45, fontWeight: FontWeight.w900),
                         ),
@@ -139,10 +139,12 @@ class _BmiScreenState extends State<BmiScreen> {
                       ],
                     ),
                     Slider(
-                      value: 50,
-                      max: 100,
-                      min: 10,
+                      value: height,
+                      max: 220,
+                      min: 50,
                       onChanged: (value) {
+                        height = value;
+                        setState(() {});
                         print(value.round());
                       },
                     )
