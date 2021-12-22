@@ -24,7 +24,9 @@ class BmiResultScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Gender : Male"),
+              Text("Gender : male"),
+              Text("Result : Result"),
+              Text("Age : Age"),
             ],
           ),
         ),

@@ -1,13 +1,10 @@
-
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
 
 import 'bmi_result_screen.dart';
-import 'bmi_screen.dart';
 
-void main()
-{
+void main() {
   runApp(MyApp());
 }
 
@@ -16,14 +13,12 @@ void main()
 
 // class MyApp
 
-class MyApp extends StatelessWidget
-{
+class MyApp extends StatelessWidget {
   // constructor
   // build
 
   @override
-  Widget build(BuildContext context)
-  {
+  Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: BmiResultScreen(),
