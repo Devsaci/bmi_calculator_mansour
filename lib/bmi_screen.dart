@@ -16,7 +16,7 @@ class _BmiScreenState extends State<BmiScreen> {
   bool isMale = true;
   double height = 170;
   double weight = 40;
-  double age = 20;
+  int age = 20;
 
   // Color _color = Colors.grey;
 
@@ -226,7 +226,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            '${age.round()}',
+                            '${age}',
                             style: TextStyle(
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
@@ -274,7 +274,11 @@ class _BmiScreenState extends State<BmiScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (contextBMISCREEN) => BmiResultScreen(),
+                    builder: (contextBmiResult) => BmiResultScreen(
+                      isMale: isMale,
+                      age: age,
+                      result: result.round(),
+                    ),
                   ),
                 );
               },

@@ -5,7 +5,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class BmiResultScreen extends StatelessWidget {
-  const BmiResultScreen({Key? key}) : super(key: key);
+  const BmiResultScreen({
+    Key? key,
+    required this.result,
+    required this.isMale,
+    required this.age,
+  }) : super(key: key);
+  final int result;
+  final bool isMale;
+  final int age;
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +32,9 @@ class BmiResultScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Gender : male"),
-              Text("Result : Result"),
-              Text("Age : Age"),
+              Text("Gender : isMale"),
+              Text("Result : result"),
+              Text("Age : age"),
             ],
           ),
         ),
