@@ -12,7 +12,9 @@ class BmiResultScreen extends StatelessWidget {
     required this.age,
   }) : super(key: key);
   final int result;
+
   final bool isMale;
+
   final int age;
 
   @override
@@ -32,9 +34,9 @@ class BmiResultScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Gender : isMale"),
-              Text("Result : result"),
-              Text("Age : age"),
+              Text("Gender : ${isMale ? 'Male' : 'Female'}"),
+              Text("Result : $result"),
+              Text("Age : $age"),
             ],
           ),
         ),
