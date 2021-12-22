@@ -18,6 +18,7 @@ class _BmiScreenState extends State<BmiScreen> {
   bool isMale = true;
   double height = 170;
   double weight = 40;
+  double age = 20;
 
   // Color _color = Colors.grey;
 
@@ -224,16 +225,29 @@ class _BmiScreenState extends State<BmiScreen> {
                             style: TextStyle(
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
+                          Text(
+                            '${age.round()}',
+                            style: TextStyle(
+                                fontSize: 25, fontWeight: FontWeight.bold),
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               FloatingActionButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  setState(() {
+                                    age--;
+                                  });
+                                },
                                 child: Icon(Icons.remove),
                                 mini: true,
                               ),
                               FloatingActionButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  setState(() {
+                                    age++;
+                                  });
+                                },
                                 child: Icon(Icons.add),
                                 mini: true,
                               ),
