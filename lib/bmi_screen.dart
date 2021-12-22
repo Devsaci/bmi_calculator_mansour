@@ -17,6 +17,7 @@ class BmiScreen extends StatefulWidget {
 class _BmiScreenState extends State<BmiScreen> {
   bool isMale = true;
   double height = 170;
+  double weight = 40;
 
   // Color _color = Colors.grey;
 
@@ -170,12 +171,12 @@ class _BmiScreenState extends State<BmiScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            'AGE',
+                            'WEIGHT',
                             style: TextStyle(
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            'HEIGHT',
+                            '${weight.round()}',
                             style: TextStyle(
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
@@ -183,12 +184,20 @@ class _BmiScreenState extends State<BmiScreen> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               FloatingActionButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  setState(() {
+                                    weight--;
+                                  });
+                                },
                                 child: Icon(Icons.remove),
                                 mini: true,
                               ),
                               FloatingActionButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  setState(() {
+                                    weight++;
+                                  });
+                                },
                                 child: Icon(Icons.add),
                                 mini: true,
                               ),
@@ -212,11 +221,6 @@ class _BmiScreenState extends State<BmiScreen> {
                         children: [
                           Text(
                             'AGE',
-                            style: TextStyle(
-                                fontSize: 25, fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            'HEIGHT',
                             style: TextStyle(
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
