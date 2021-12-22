@@ -143,8 +143,10 @@ class _BmiScreenState extends State<BmiScreen> {
                       max: 220,
                       min: 50,
                       onChanged: (value) {
-                        height = value;
-                        setState(() {});
+                        // height = value;
+                        setState(() {
+                          height = value;
+                        });
                         print(value.round());
                       },
                     )
