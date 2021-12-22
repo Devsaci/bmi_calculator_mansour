@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'dart:math';
 import 'dart:ui';
 
+import 'package:bmi_calculator_mansour/bmi_result_screen.dart';
 import 'package:flutter/material.dart';
 
 class BmiScreen extends StatefulWidget {
@@ -189,6 +189,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                   });
                                 },
                                 child: Icon(Icons.remove),
+                                heroTag: 'weight--;',
                                 mini: true,
                               ),
                               FloatingActionButton(
@@ -198,6 +199,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                   });
                                 },
                                 child: Icon(Icons.add),
+                                heroTag: 'weight++;',
                                 mini: true,
                               ),
                             ],
@@ -237,6 +239,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                     age--;
                                   });
                                 },
+                                heroTag: ' age--;',
                                 child: Icon(Icons.remove),
                                 mini: true,
                               ),
@@ -247,6 +250,7 @@ class _BmiScreenState extends State<BmiScreen> {
                                   });
                                 },
                                 child: Icon(Icons.add),
+                                heroTag: ' age++;',
                                 mini: true,
                               ),
                             ],
@@ -266,6 +270,13 @@ class _BmiScreenState extends State<BmiScreen> {
               height: 50,
               onPressed: () {
                 var result = weight / pow(height / 100, 2);
+                print(result.round());
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (contextBMISCREEN) => BmiResultScreen(),
+                  ),
+                );
               },
               child: Text(
                 'CALCULATE',
