@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -263,7 +264,9 @@ class _BmiScreenState extends State<BmiScreen> {
             color: Colors.blueAccent,
             child: MaterialButton(
               height: 50,
-              onPressed: () {},
+              onPressed: () {
+                var result = weight / pow(height / 100, 2);
+              },
               child: Text(
                 'CALCULATE',
                 style: TextStyle(color: Colors.white),
