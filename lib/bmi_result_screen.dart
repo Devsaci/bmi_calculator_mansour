@@ -1,3 +1,4 @@
+
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
@@ -22,8 +23,8 @@ class BmiResultScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: (){
-
+          onPressed: () {
+            Navigator.pop(context);
           },
           icon: Icon(
               Icons.keyboard_arrow_left),
