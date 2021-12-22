@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class BmiResultScreen extends StatelessWidget {
   const BmiResultScreen({Key? key}) : super(key: key);
@@ -19,10 +20,13 @@ class BmiResultScreen extends StatelessWidget {
           fontWeight: FontWeight.bold,
           color: Colors.deepOrange,
         ),
-        child: Column(
-          children: [
-            Text("Gender : Male"),
-          ],
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("Gender : Male"),
+            ],
+          ),
         ),
       ),
     );
